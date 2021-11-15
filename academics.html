@@ -10,26 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
     <title>Academics</title>
 
 </head>
 
 <body>
+    <a class = "skip" href = "#skip">Skip to Main Content</a>
     <header>
+        <div class = "letterM">
+            <img src = "images/letterM.jpeg" alt = "letter M"></img>
+        </div>
+        <div class="break"></div> <!-- break to a new row -->
+
         <nav>
-            <ul>
-                <li><a  href = "index.html">Home</a></li>
-                <li><a  href = "personal.html">About Me</a></li>
-                <li><a class = "current" href = "academics.html">Academics</a></li>
+            <ul class = "nav_links">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "personal.html">About Me</a></li>
+                <li><a  class = "current" href = "academics.html">Academics</a></li>
                 <li><a href = "professional.html">Professional</a></li>
                 <li><a href = "contactme.html">Contact Me</a></li>
     
             </ul>
         </nav>
-        <div class = "letterM">
-            <img src = "images/letterM.jpeg" alt = "letter M"></img>
-        </div>
     </header>
         <main>
             <div class = "header">
@@ -37,10 +39,11 @@
                     <h1>Academics</h1>
                 </div>
             </div>
-            <h1>Relevant Coursework</h1>
-            <h2> Freshmen Year</h2>            
-            <div class = "freshmenYear">
-                <div id="border"></div>
+            <h1 id = "acad">Relevant Coursework</h1>
+            <div class = "Coursework"> 
+            <h2 class = "headerF"> [ Freshmen Year ]  </h2> 
+            <div id="border"></div>
+            <div class = "freshmenYear"  id="skip">   
                 <ul>
                     <li> Math 216: Introduction to Differential Equations </li>
                     <li> Chem 130:General Chemistry: Macroscopic Investigations and Reaction Principles </li>
@@ -50,7 +53,7 @@
                     <li> Stats 250 : Introduction to Statistics and Data Analysis </li>
                 </ul>
             </div>
-            <h2> Sophmore Year</h2>
+            <h2 class = "headerS"> [  Sophomore Year ]</h2>
             <div class = "sophmoreYear">
                 <ul>
                     <li> EECS 203: Discrete Math  </li>
@@ -60,7 +63,7 @@
                 </ul>
                 
             </div>
-            <h2> Junior Year</h2>
+            <h2 class = "headerJ"> [ Junior Year ]</h2>
             <div class = "juniorYear">
                 <ul>
                     <li> EECS 370: Introduction to Computer Organization                </li>
@@ -69,9 +72,10 @@
                     <li> EECS 485: Web Database and Information Systems </li>
                 </ul>            
             </div>
-
-            <h1>Relevant Projects</h1>
-            <h2>EECS 280</h2>
+        </div>
+        <div class = "relevantP">
+            <h1 id = "revP">Relevant Projects</h1>
+            <h2 class = "header280"> [ EECS 280 ]</h2>
             <div class = "eecs280">
                 <ul>
                     <li>
@@ -82,7 +86,7 @@
                 </ul>
             </div>
  
-            <h2>EECS 281</h2>
+            <h2 class = "header281">[ EECS 281 ]</h2>
             <div class = "eecs281">
                 <ul>
                     <li>Project One: I programmed path finding algorithms. I utilized priority queues and stacks to determine
@@ -97,7 +101,7 @@
                 </ul>
             </div>
             
-            <h2>EECS 370</h2>
+            <h2 class = "header370">[ EECS 370 ]</h2>
             <div class = "eecs370">
                 <ul>
                     <li>Project One: I wrote program to take an assembly-language program and produced the corresponding machine language. 
@@ -114,7 +118,7 @@
                     </li>
                 </ul>
             </div>
-
+        </div>
         </main>
 
 

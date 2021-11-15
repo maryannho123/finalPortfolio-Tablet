@@ -15,9 +15,16 @@
 </head>
 
 <body>
+    <a class = "skip" href = "#skip">Skip to Main Content</a>
+
     <header>
+        <div class = "letterM">
+            <img src = "images/letterM.jpeg" alt = "letter M"></img>
+        </div>
+        <div class="break"></div> <!-- break to a new row -->
+
         <nav>
-            <ul>
+            <ul class = "nav_links">
                 <li><a  href = "index.html">Home</a></li>
                 <li><a  href = "personal.html">About Me</a></li>
                 <li><a  href = "academics.html">Academics</a></li>
@@ -26,9 +33,7 @@
     
             </ul>
         </nav>
-        <div class = "letterM">
-            <img src = "images/letterM.jpeg" alt = "letter M"></img>
-        </div>
+
     </header>
     <body>
         <main>
@@ -45,19 +50,38 @@
                     <p>Let's Chat! </p>
                 </div>
             </div>
+            <form  id="skip">
+                <fieldset>
+                  <legend>Let's Chat</legend>
+              
+                  <label for="name_id">Your Name</label>
+                  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+              
+                  <label for="email_id">Your Email</label>
+                  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+              
+                  <label for="phone_id">Your Phone Number</label>
+                  <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              
+              
+                  <label for="msg">Leave A Message</label>
+                  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+              
+                  <input type="submit" value = "Contact Me">
+                </fieldset>
+               </form>
             <div class = "containerContact">
                 <div class = "contactP">
                     <p> I am excited to hear from you!</p>
-                    <p> The best method of contacting me is via email: hmaryann@umich.edu. My phone number is: 720-243-6619.
-                        I am currently looking a full time Software Position.</p>
-                </div>
-                <div class = "imageC">
-                    <img src="images/contact.png" alt = "Mary sitting in a field"></img>
                 </div>
                 <p class = "interest"> My interests lie in becoming a full stack developer. I am passionate in both client and server software
                     I have experience in data bases and front and back end development. This current summer I have another internship
                     at Collins Aerospace, I will be designing a UI/UX for commercial helicopters. 
                 </p> 
+                <div class = "imageC">
+                    <img src="images/contact.png" alt = "Mary sitting in a field" class = "field"></img>
+                </div>
+
             </div>
         </main>
     </body>

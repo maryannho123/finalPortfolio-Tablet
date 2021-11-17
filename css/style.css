@@ -6,6 +6,8 @@ body{
   }
   h3{
       margin-top: 10%;;
+      font-size: 20px;
+      color: #2d94a2;
   }
 a { 
     font-size: 24px;
@@ -16,18 +18,18 @@ a {
 }
 header{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     grid-row: auto;
 }
 .nav{
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
 }
 .letterM{
     height:70%;
     width: 70%;
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
 }
 a:visited { 
     text-decoration: none; 
@@ -57,7 +59,7 @@ img {
 .header{
     font-family: "Dancing Script", serif;
     background-repeat: no-repeat; /* Parallax effect */
-    background-image: url("../images/redMountain.png"); 
+    background-image: url("../images/red_mountain.png"); 
     /* background-attachment: fixed; Parallax effect */
     background-position: center; /* Parallax effect */
     background-size: cover; /* Parallax effect */
@@ -98,7 +100,7 @@ h1{
     opacity: 1;
 }
 h2{
-    color:#dd7376;
+    color:#942428;
     margin-top: 2%;
     margin-bottom: 1%;
     font-style: italic;
@@ -261,7 +263,7 @@ ul{
 }
 .imageC{
     grid-column: 1 /span 2;
-    grid-row: 3/ span 1;
+    grid-row: 4/ span 1;
     justify-content: center;
 }
 .interest{
@@ -274,10 +276,20 @@ ul{
     margin-bottom: 5%;
 
 }
+.interest1{
+    grid-column: 1 / span 2;
+    grid-row: 3/ span 1;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+
+}
 .containerContact{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 form {
@@ -330,19 +342,39 @@ form {
   }
   
   input[type=submit] {
-    background-color:#1c898a;
+    background-color:#146061;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: 18px;
   }
   
   input[type=submit]:hover {
     opacity: 0.8;
   }
-
+  a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+  
+  *:focus{
+    border: 2px solid black;
+  }
 @media screen and (min-width: 760px){
     header{
         display: flex;
@@ -467,6 +499,10 @@ form {
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 25%;
+        margin-bottom: 50%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .freshmenYear{
         grid-row: 2/span 2;
@@ -483,6 +519,10 @@ form {
         grid-column: 2/ span 1;
         text-align: center;
         margin-top: 12%;
+        margin-bottom: 40%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .sophmoreYear{
         grid-row:4/span 1;
@@ -495,6 +535,10 @@ form {
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 20%;
+        margin-bottom: 40%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .juniorYear{
         grid-row: 6/span 1;
@@ -512,6 +556,10 @@ form {
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 20%;
+        margin-bottom: 40%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .eecs280{
         grid-row: 2/span 1;
@@ -522,6 +570,10 @@ form {
         grid-column: 2/ span 1;
         text-align: center;
         margin-top: 45%;
+        margin-bottom: 55%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .eecs281{
         grid-row: 3/span 1;
@@ -532,6 +584,10 @@ form {
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 45%;
+        margin-bottom: 55%;
+        background-color: #94242814;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .eecs370{
         grid-row:4/span 1;
@@ -553,26 +609,7 @@ form {
         flex-basis: 300px;
         /* background-image: ; */
     }
-    a.skip{
-        background: white;
-        left: 0;
-        padding: 6px;
-        position: absolute;
-        top: -40px;
-        -webkit-transition: top 1s ease-out;
-        transition: top 1s ease-out;
-        z-index: 1;
-      }
-      
-      a.skip:focus{
-        top:20px;
-        color: black;
-        text-decoration-style: solid;
-      }
-      
-      *:focus{
-        border: 2px solid black;
-      }
+    
     img.field{
         width: 100%;
         height: 80%;

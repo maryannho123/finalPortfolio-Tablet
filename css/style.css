@@ -222,7 +222,7 @@ ul li {
      padding: 5px 0px;
 }
 .freshmenYear, .sophmoreYear, .juniorYear, .eecs280, .eecs281, .eecs370{
-    border-top: 2px solid #048a99;
+    border-top: 3px solid #048a99;
     opacity: 0.9;
     padding-left: 30px;
     padding-top: 10px;
@@ -482,12 +482,13 @@ form {
     .Coursework{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: auto auto auto auto;
+        
     }
     .relevantP{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: auto auto auto auto;
     }
     #acad{
         font-size: 24px;
@@ -495,7 +496,7 @@ form {
         grid-column: 1/-1;
     }
     .headerF{
-        grid-row: 2/span 2;
+        grid-row: 2/span 1;
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 25%;
@@ -505,17 +506,17 @@ form {
         margin-right: 10%;
     }
     .freshmenYear{
-        grid-row: 2/span 2;
+        grid-row: 2/span 1;
         grid-column: 2/ span 1;
-
+        display: inline-block
     }
-    #border{
+    /* #border{
         background-color: green;
         grid-row: 3/ span 1;
         grid-column: 1/span 2;
-    }
+    } */
     .headerS{
-        grid-row: 4/span 2;
+        grid-row: 3/span 1;
         grid-column: 2/ span 1;
         text-align: center;
         margin-top: 12%;
@@ -525,25 +526,25 @@ form {
         margin-right: 10%;
     }
     .sophmoreYear{
-        grid-row:4/span 1;
+        grid-row:3/span 1;
         grid-column: 1/ span 1;
 
     }
 
     .headerJ{
-        grid-row: 6/span 1;
+        grid-row: 4/span 1;
         grid-column: 1/ span 1;
         text-align: center;
         margin-top: 20%;
-        margin-bottom: 40%;
+        margin-bottom: 30%;
         background-color: #94242814;
         margin-left: 10%;
         margin-right: 10%;
     }
     .juniorYear{
-        grid-row: 6/span 1;
+        grid-row: 4/span 1;
         grid-column: 2/ span 1;
-
+    
     }
 
     #revP{
@@ -603,6 +604,13 @@ form {
         flex-direction: row;
         flex-wrap: wrap;
 
+    }
+
+    .juniorYear,.freshmenYear   {
+        border-left: 2px solid #146061;
+    }
+    .eecs281   {
+        border-right: 2px solid #146061;
     }
     /* make them more card set and set heights and shit*/
     .box{

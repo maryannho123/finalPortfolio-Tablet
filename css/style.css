@@ -80,17 +80,7 @@ img {
     background: rgba(255, 255, 255, 0.7);
 }
 
-/* .bar {
-    font-size: 72px;
-    background-color: white;
-    opacity: 0.33;
-    max-height: 50%;
-    z-index: auto;
-}
-h1.ontop {
-    position: relative;
-    opacity: 1;
-} */
+
 
 h1{
     /* font-size: 24px; */
@@ -234,18 +224,10 @@ ul{
 .download a{
     color:#048a99;
     text-decoration: underline;
-    /* justify-content: left; */
-    /* text-align: center; */
 }
-/* h2{
-    font-size: 17px;
-    color:#7dcfb6
-} */
+
 .SEPP_Intern, .CU_Intern, .MI_Intern{
     border-top: 3px solid #048a99;
-    /* box-shadow: 2px 2px #68ddcb;
-
-    border-bottom: 2px solid #7dcfb6; */
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -255,8 +237,6 @@ ul{
 }
 .contactP{
     margin-top: 5%;
-    /* margin-left: 2%;
-    margin-right: 2%; */
     text-align: center;
     grid-column: 1 / span 2;
     grid-row: 1;
@@ -375,6 +355,7 @@ form {
   *:focus{
     border: 2px solid black;
   }
+ 
 @media screen and (min-width: 760px){
     header{
         display: flex;
@@ -479,7 +460,7 @@ form {
         grid-column:2/ span 1;
         grid-row: 7 / span 1;
     }
-    .Coursework{
+    .coursework{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto auto;
@@ -495,35 +476,21 @@ form {
         grid-row: 1;
         grid-column: 1/-1;
     }
-    .headerF{
+    #enginering1{
         grid-row: 2/span 1;
         grid-column: 1/ span 1;
-        text-align: center;
-        margin-top: 25%;
-        margin-bottom: 50%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
+   
     }
     .freshmenYear{
         grid-row: 2/span 1;
         grid-column: 2/ span 1;
         display: inline-block
     }
-    /* #border{
-        background-color: green;
-        grid-row: 3/ span 1;
-        grid-column: 1/span 2;
-    } */
-    .headerS{
+
+    #enginering3{
         grid-row: 3/span 1;
         grid-column: 2/ span 1;
-        text-align: center;
-        margin-top: 12%;
-        margin-bottom: 40%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
+
     }
     .sophmoreYear{
         grid-row:3/span 1;
@@ -531,15 +498,10 @@ form {
 
     }
 
-    .headerJ{
+    #engineering2{
         grid-row: 4/span 1;
         grid-column: 1/ span 1;
-        text-align: center;
-        margin-top: 20%;
-        margin-bottom: 30%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
+
     }
     .juniorYear{
         grid-row: 4/span 1;
@@ -552,47 +514,34 @@ form {
         grid-row: 1/span 1;
         grid-column: 1/ span 2;
     }
-    .header280{
+    #enginering4{
         grid-row: 2/span 1;
         grid-column: 1/ span 1;
-        text-align: center;
-        margin-top: 20%;
-        margin-bottom: 40%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
     }
     .eecs280{
         grid-row: 2/span 1;
         grid-column: 2/ span 1;
+        margin: 2%;
     }
-    .header281{
+    #enginering5{
         grid-row: 3/span 1;
         grid-column: 2/ span 1;
-        text-align: center;
-        margin-top: 45%;
-        margin-bottom: 55%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
+
     }
     .eecs281{
         grid-row: 3/span 1;
         grid-column: 1/ span 1; 
+        margin: 2%;
     }
-    .header370{
+    #enginering6{
         grid-row: 4/span 1;
         grid-column: 1/ span 1;
-        text-align: center;
-        margin-top: 45%;
-        margin-bottom: 55%;
-        background-color: #94242814;
-        margin-left: 10%;
-        margin-right: 10%;
+
     }
     .eecs370{
         grid-row:4/span 1;
-        grid-column: 2/ span 1; 
+        grid-column: 2/ span 1;
+        margin: 2%; 
     }
     .header280, .header281, .header370, .headerJ, .headerF, .headerS{
         font-size: 24px;
@@ -606,12 +555,6 @@ form {
 
     }
 
-    .juniorYear,.freshmenYear   {
-        border-left: 2px solid #146061;
-    }
-    .eecs281   {
-        border-right: 2px solid #146061;
-    }
     /* make them more card set and set heights and shit*/
     .box{
         flex-basis: 300px;
@@ -641,6 +584,9 @@ form {
         border: thick double #1c898a;
         padding: 2%;
     
+    }
+    .freshmenYear, .sophmoreYear, .juniorYear, .eecs280, .eecs281, .eecs370{
+        border: none;
     }
     
 }
